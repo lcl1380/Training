@@ -12,16 +12,16 @@ public:
 
 Circle::Circle() {
 	radius = 1;
-	cout << "¹ÝÁö¸§ " << radius << " ¿ø »ý¼º" << endl;
+	cout << "ë°˜ì§€ë¦„ " << radius << " ì› ìƒì„±" << endl;
 }
 
 Circle::Circle(int r) {
 	radius = r;
-	cout << "¹ÝÁö¸§ " << radius << " ¿ø »ý¼º" << endl;
+	cout << "ë°˜ì§€ë¦„ " << radius << " ì› ìƒì„±" << endl;
 }
 
 Circle::~Circle() {
-	cout << "¹ÝÁö¸§ " << radius << " ¿ø ¼Ò¸ê" << endl;
+	cout << "ë°˜ì§€ë¦„ " << radius << " ì› ì†Œë©¸" << endl;
 }
 
 double Circle::getArea() {
