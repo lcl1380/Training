@@ -1,16 +1,16 @@
-#include <windows.h>
+#include <windows.h> 
 #include <stdio.h>
 int main(void) {
-	int ch;  //Á¤¼öÇü ÁÖÀÇ
+	int ch;  //ì •ìˆ˜í˜• ì£¼ì˜
 	int width = 200, height = 200;
 	HDC hdc = GetWindowDC(GetForegroundWindow());
-	while (1) {//while(1)Àº ¹«ÇÑ¹İº¹¹®
+	while (1) {//while(1)ì€ ë¬´í•œë°˜ë³µë¬¸
 		Rectangle(hdc, 100, 100, width, height);
 		ch = getchar();
 		Rectangle(hdc, 0, 0, 400, 300);
 		if (ch == 'b') {
-			width += 10; //width°¡ 10 Áõ°¡ÇÔ
-			height += 10; //height°¡ 10 Áõ°¡ÇÔ
+			width += 10; //widthê°€ 10 ì¦ê°€í•¨
+			height += 10; //heightê°€ 10 ì¦ê°€í•¨
 		}
 		else if (ch == 's') {
 			width -= 10;
@@ -21,4 +21,4 @@ int main(void) {
 		}
 	}
 	return 0;
-} //±Ùµ¥ °è¼ÓÇØ¼­ Ä¿ÁöÁø ¾ÊÀ½ ¹¹ÀÓ ¤Ì
+} //ê·¼ë° ê³„ì†í•´ì„œ ì»¤ì§€ì§„ ì•ŠìŒ ë­ì„ ã…œ --> windowsë‘ stdioë‘ ìˆœì„œ ë°”ë€Œì–´ì„œ ê·¸ëŸ°ê°€?? í™•ì¸í•´ë³¼ê²ƒ 
