@@ -7,22 +7,22 @@ struct point {
 };
 
 int main(void) {
-	//point ±¸Á¶Ã¼ p1, p2 ¼±¾ğ
+	//point êµ¬ì¡°ì²´ p1, p2 ì„ ì–¸
 	struct point p1, p2;
 
 	double xdiff, ydiff;
 	double dist;
 
-	printf("Á¡ÀÇ ÁÂÇ¥¸¦ ÀÔ·ÂÇÏ½Ã¿À (x y) : ");
+	printf("ì ì˜ ì¢Œí‘œë¥¼ ì…ë ¥í•˜ì‹œì˜¤ (x y) : ");
 	scanf("%d %d", &p1.x, &p1.y);
 
-	printf("Á¡ÀÇ ÁÂÇ¥¸¦ ÀÔ·ÂÇÏ½Ã¿À (x y) : ");
+	printf("ì ì˜ ì¢Œí‘œë¥¼ ì…ë ¥í•˜ì‹œì˜¤ (x y) : ");
 	scanf("%d %d", &p2.x, &p2.y);
 
 	xdiff = p1.x - p2.x;
 	ydiff = p1.y - p2.y;
 
 	dist = sqrt(xdiff * xdiff + ydiff * ydiff);
-	printf("µÎ Á¡ »çÀÌÀÇ °Å¸®´Â %f ÀÔ´Ï´Ù.\n",dist);
+	printf("ë‘ ì  ì‚¬ì´ì˜ ê±°ë¦¬ëŠ” %f ì…ë‹ˆë‹¤.\n",dist);
 	return 0;
 }
